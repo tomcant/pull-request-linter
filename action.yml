@@ -1,0 +1,15 @@
+name: 'Pull request linter'
+description: 'Run basic checks against pull requests to ensure a minimum standard is met.'
+inputs:
+  minBodyLength:
+    description: 'The PR check will fail if the body contains fewer characters than this number.'
+    required: false
+  bodyMustNotContain:
+    description: 'The PR check will fail if the body contains this substring.'
+    required: false
+  mustHaveReleaseCategory:
+    description: 'The PR check will fail if the labels do not contain exactly one release category.'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
