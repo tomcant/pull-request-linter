@@ -11,5 +11,5 @@ inputs:
     description: 'The PR check will fail if the labels do not contain exactly one release category.'
     required: false
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
