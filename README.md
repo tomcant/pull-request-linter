@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: tomcant/pull-request-linter@v1
+    - uses: tomcant/pull-request-linter@v2
       with:
         minBodyLength: '20'
         bodyMustNotContain: 'Foo bar'
